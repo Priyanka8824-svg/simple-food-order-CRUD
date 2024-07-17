@@ -1,0 +1,23 @@
+{% block title %}
+<title>Show</title>
+{% endblock %}
+
+{% block content %}
+<div>
+  <table>
+    <thead>
+        <tr>Id</tr>
+        <tr>Title</tr>
+      <tr>Description</tr>
+      <tr>Completed</tr>
+      <tr>Created_at</tr>
+      <tr>Updated_at</tr>
+    </thead>
+
+    <tbody>
+      <tr>{{food.id}}</tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+

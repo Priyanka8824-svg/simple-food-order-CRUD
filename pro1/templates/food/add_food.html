@@ -1,0 +1,16 @@
+{% block title %}
+<title>Add Food</title>
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1 style="color:orange"><center><b><u>Add Food Form Page.</u></b></center></h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
